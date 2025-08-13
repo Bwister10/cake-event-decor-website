@@ -1,0 +1,58 @@
+/*.galleryContainer {
+}*/
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+  background-color: #0b0f1e;
+  padding-top: 2rem;
+}
+
+.tab {
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  padding: 8px 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(171, 71, 188, 0.5);
+}
+
+.tab:hover {
+  background-color: #7243ad;
+  color: #fff;
+}
+
+.active {
+  background-color: #4a148c;
+  color: white;
+  border-color: #4a148c;
+}
+
+.galleryContent {
+  margin: 0 auto;
+}
+
+.galleryItem {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tab {
+    font-size: 10px;
+  }
+
+  .tabBar {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}

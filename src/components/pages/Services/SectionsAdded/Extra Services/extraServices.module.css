@@ -1,0 +1,121 @@
+.extraServices {
+  background: linear-gradient(
+    180deg,
+    rgba(171, 71, 188, 0.8) -20%,
+    rgba(171, 71, 188, 0.8) 86%
+  );
+  color: #fff;
+  padding: 0.2rem 2rem;
+  text-align: center;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Cards Container */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 220px;
+  height: 311px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(50px);
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  background: #eee;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 30px rgba(171, 71, 188, 0.18);
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.cardTexts {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 1.2rem 1rem 1rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 21, 20, 0.05) -20%,
+    rgba(20, 21, 20, 0.85) 86%
+  );
+  color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+  font-size: 1rem;
+  color: #eee;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .card {
+    height: 250px;
+    min-height: 120px;
+  }
+
+  .extraServices {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .cardTexts {
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 0.95rem;
+  }
+}

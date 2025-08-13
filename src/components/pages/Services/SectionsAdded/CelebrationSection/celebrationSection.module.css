@@ -1,0 +1,128 @@
+.canvas {
+  position: relative;
+  background: linear-gradient(135deg, #0b0f1e, #1c1f30);
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.textContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.tagline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ab47bc;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #ccc;
+  animation: fadeIn 1.5s ease forwards 0.5s;
+}
+
+/* Floating Shapes */
+.floatingShape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.shape1 {
+  width: 80px;
+  height: 80px;
+  background: #ab47bc66;
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.shape2 {
+  width: 50px;
+  height: 50px;
+  background: #ffffff33;
+  top: 40%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+.shape3 {
+  width: 100px;
+  height: 100px;
+  background: #ab47bc33;
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 1s;
+}
+
+.shape4 {
+  width: 60px;
+  height: 60px;
+  background: #ffffff22;
+  bottom: 5%;
+  right: 20%;
+  animation-delay: 3s;
+}
+
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .floatingShape {
+    opacity: 0.15;
+    animation-duration: 8s;
+  }
+
+  .shape1,
+  .shape2,
+  .shape3,
+  .shape4 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,55 @@
+.benefits {
+  padding: 2rem 2rem;
+  min-height: 400px;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+
+.heading {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #111;
+}
+
+.heading span {
+  color: #ab47bc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Initial hidden state */
+.benefitCard {
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+/* Animated visible state */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e94e1b;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+}

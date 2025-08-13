@@ -1,0 +1,129 @@
+.gallerySection {
+  max-width: 700px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.galleryNav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.galleryTab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 999px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.activeTab {
+  background: #6a1b9a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+
+.galleryItem {
+  position: relative;
+}
+
+.galleryItem img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 104px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.galleryItem img:hover {
+  transition: transform 0.3s;
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
+
+.galleryItem p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.seeMoreOverlay {
+  position: absolute;
+  bottom: 28px;
+  right: -82px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(11, 15, 30, 0.8);
+  color: #fff;
+  padding: 6px 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.galleryItem:hover .seeMoreOverlay {
+  opacity: 1;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+.seeMoreBtn {
+  margin: 2rem auto 0 auto;
+  display: block;
+  background: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.seeMoreBtn:hover {
+  background: #4a148c;
+}
+
+@media (max-width: 768px) {
+  .galleryTab {
+    font-size: 13px;
+    padding: 0;
+  }
+
+  .seeMoreOverlay {
+    right: -73px;
+    text-align: center;
+  }
+
+  .activeTab {
+    padding: 10px;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

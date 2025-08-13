@@ -1,0 +1,61 @@
+.NoPageSection {
+  padding: 7rem;
+  background: linear-gradient(135deg, #ab47bc, #a068e4);
+}
+
+.NoPageContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #a068e4;
+  padding: 5rem;
+  justify-items: center;
+  line-height: 4rem;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.NoPageContainer a {
+  color: #b707d6;
+  text-decoration: none;
+}
+.NoPageContainer a:hover {
+  color: #672772;
+  text-decoration: none;
+}
+
+.NoPageContainer h3 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.NoPageContainer p {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 769px) {
+  .NoPageContainer {
+    width: 300px;
+    height: 300px;
+    line-height: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .noPagetext {
+    max-width: 30rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 80%);
+  }
+
+  .NoPageContainer h3 {
+    font-size: 23px;
+  }
+
+  .NoPageContainer p {
+    font-size: 15px;
+  }
+}

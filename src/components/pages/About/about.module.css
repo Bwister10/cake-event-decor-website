@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@600&display=swap");
+
+.main {
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+.intro {
+  text-align: center;
+  margin: 0 auto 2rem;
+  background: url("../../../assets/Images/AboutImages/purpleEvent.png")
+    center/cover no-repeat;
+  filter: brightness(80%);
+  padding: 8rem 0;
+}
+
+.introSection {
+  max-width: 1000px;
+  margin: 0 auto 1rem;
+}
+
+.intro .title {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.8rem;
+  color: #fff;
+  padding-top: 2rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeUp 1s ease forwards 0.4s;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #fff;
+  animation: fadeUp 1s ease forwards 0.4s;
+}
+
+.intro a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.intro a:hover {
+  color: #eac3ea;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text h2 {
+  font-family: Playfair Display, serif;
+  color: #ab47bc;
+  animation: zoomIn 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.text p {
+  animation: fadeInLeft 2s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Card Section */
+.cardsSection {
+  background-color: #f9fafb;
+  padding: 3rem 1.5rem;
+}
+
+.cardSection {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  width: 100%;
+  height: 260px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.image:hover {
+  filter: brightness(80%);
+}
+
+.texts {
+  padding: 10px;
+}
+.texts .title {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.8rem;
+  color: #ab47bc;
+}
+
+.description {
+  line-height: 25px;
+  text-align: center;
+}
+
+/*Founder Section*/
+.founderSection {
+  background-color: #e4e4e4;
+  padding: 3rem;
+  display: block;
+  position: relative;
+}
+
+.founderTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.6rem;
+  color: #ab47bc;
+}
+.founderText {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.miniSection {
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  justify-self: center;
+  display: block;
+}
+
+.blackBackground {
+  background: #0b0f1e;
+  width: 215px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+.whiteBackground {
+  background: #787373;
+  width: 500px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.founderCont {
+  display: flex;
+  height: 400px;
+}
+
+.founderImg {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.imgSection {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-items: center;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.imgText {
+  line-height: 30px;
+  width: 300px;
+}
+.imgText p {
+  text-align: justify;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.imgText h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.imgText h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Why Choose Us Section */
+.whyChooseUs {
+  padding: 3rem 1.5rem;
+  background-color: #fff7fb;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0b0f1e;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.whyChooseUs .card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  max-width: 320px;
+  text-align: center;
+  transition: transform;
+  max-height: 500px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.09);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/*Celebrate Section */
+.celebrateSection {
+  position: relative;
+  background-image: url("../../../assets/Images/AboutImages/celebrate.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay so text pops */
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.content .title {
+  color: #fff7fb;
+}
+
+.tag {
+  background-color: #ab47bc; /* Light purple tag */
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/*Get In Touch Section */
+.getInTouch {
+  position: relative;
+  background: linear-gradient(135deg, #ab47bc, #a068e4);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contactOverlay {
+  position: relative;
+  z-index: 2;
+}
+
+.contactHeading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contactSubtext {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contactPrimaryBtn {
+  background-color: #fff;
+  color: #ab47bc;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactPrimaryBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #ab47bc;
+}
+
+.contactSecondaryBtn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contactSecondaryBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .intro .title {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text {
+    background-color: #f9f9f9;
+  }
+  .text h2 {
+    font-size: 1.7rem;
+    line-height: 30px;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    margin: 0 auto;
+  }
+
+  .cardSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .founderSection {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .blackBackground {
+    width: 100%;
+    height: 150px;
+    border-radius: 0;
+  }
+
+  .whiteBackground {
+    width: 100%;
+    height: 283px;
+    border-radius: 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .texts .title {
+    margin-bottom: 0.4rem;
+  }
+
+  .miniSection {
+    max-width: 310px;
+  }
+
+  .founderCont {
+    display: flex;
+    max-width: 310px;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .imgSection {
+    flex-direction: column;
+    max-width: 346px;
+    padding: 7px;
+    transform: translate(-49%, -49%);
+  }
+
+  .founderImg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .founderText {
+    font-size: 15px;
+  }
+
+  .founderTitle {
+    font-size: 1.5rem;
+  }
+
+  .imgText {
+    line-height: 22px;
+  }
+
+  .imgText h2 {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+  .imgText h3 {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  .imgText p {
+    text-align: inherit;
+    font-size: 14px;
+    padding: 0 2rem;
+  }
+}
